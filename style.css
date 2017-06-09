@@ -6,49 +6,49 @@ a {
     text-decoration: none;
 }
 
-h1{
+h1 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-p{
+p {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-.color-dark-50{
+.color-dark-50 {
     color: rgba(0, 0, 0, .5);
 }
 
-.color-dark-90{
+.color-dark-90 {
     color: rgba(0, 0, 0, .9);
 }
 
-.mb-sm{
+.mb-sm {
     margin-bottom: .5rem;
 }
 
-.mb-md{
+.mb-md {
     margin-bottom: 1rem;
 }
 
-.mb-lg{
-    margin-bottom: 3rem;    
+.mb-lg {
+    margin-bottom: 3rem;
 }
 
-.mr-sm{
+.mr-sm {
     margin-right: .5rem;
 }
 
-.pd-1{
+.pd-1 {
     padding: 1rem;
 }
 
-.pd-2{
+.pd-2 {
     padding: 2rem;
 }
 
@@ -67,16 +67,16 @@ p{
 .hero-image {
     background: center/cover url(assets/bg.jpg);
     display: none;
-    flex-grow: 1;
 }
 
 @media (min-width: 992px) {
     .hero-image {
         display: flex;
+        flex-grow: 1;
     }
 }
 
-.hero-content{
+.hero-content {
     background-color: rgba(0, 0, 0, .2);
     color: #fff;
     display: flex;
@@ -84,11 +84,11 @@ p{
     flex-grow: 1;
 }
 
-.hero-info{
+.hero-info {
     max-width: 320px;
 }
 
-.logo{
+.logo {
     align-items: center;
     background: repeat-x center url(assets/logo.jpg);
     display: flex;
@@ -97,33 +97,20 @@ p{
     justify-content: center;
 }
 
-.hero-p{
+.hero-p {
     font: 1rem/1.2 "Roboto";
 }
 
-.hero-list{
+.hero-list {
     font: .8rem/1.4 "Roboto";
     list-style-type: none;
     margin: 0;
     padding-left: 0;
 }
 
-.hero-company{
+.hero-company {
     font: .8rem/1 "Roboto";
     margin-top: auto;
-}
-
-.main {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-@media (min-width: 992px) {
-    .main {
-        flex-grow: 0;        
-    }
 }
 
 .banner {
@@ -142,20 +129,33 @@ p{
     }
 }
 
-.login-wrapper {
+.main {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .main {
+        flex-grow: 0;
+    }
+}
+
+.content-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 320px;
 }
 
-.register-text {
+.content-header {
     font: 400 1.2rem/1.4 "Roboto";
     text-align: center;
 }
 
 @media (min-width: 992px) {
-    .register-text {
+    .content-header {
         text-align: left;
     }
 }
@@ -170,11 +170,11 @@ p{
     }
 }
 
-.login-content-group{
+.content-grp {
     font: .8rem/1 "Roboto";
 }
 
-.login-buttons {
+.content-buttons {
     display: flex;
     flex-direction: column;
 }
@@ -227,7 +227,7 @@ p{
     background-image: url(assets/google.svg);
 }
 
-.divider {
+.content-divider {
     align-items: center;
     background-color: #dedede;
     display: flex;
@@ -235,7 +235,7 @@ p{
     justify-content: center;
 }
 
-.or {
+.or-text {
     background-color: #fff;
 }
 
@@ -246,12 +246,17 @@ p{
     height: 40px;
 }
 
-.pw-req {
+.content-p{
     font: .7rem/1.2 "Roboto";
     display: block;
 }
 
-.create-account {
+.content-link {
+    font: .7rem/1.2 "Roboto";
+    display: block;
+}
+
+.account-btn {
     background-color: #dedede;
     border: 0;
     cursor: pointer;
@@ -259,7 +264,7 @@ p{
     transition: background-color 80ms linear;
 }
 
-.create-account:hover {
+.account-btn:hover {
     background-color: #bfbfbf;
 }
 
@@ -275,14 +280,14 @@ p{
     }
 }
 
-.legal {
+.content-legal {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 @media (min-width: 576px) {
-    .legal {
+    .content-legal {
         flex-direction: row;
     }
 }
@@ -305,45 +310,47 @@ p{
     }
 }
 
+
 /* Reset page */
 
-.reset-container{
+.reset-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     background-color: #f2f2f2;
 }
+
 @media (min-width: 576px) {
     .reset-container {
         justify-content: center;
     }
 }
 
-.reset-wrapper{
+.reset-wrapper {
     box-sizing: border-box;
-    background-color: #fff;    
+    background-color: #fff;
     max-width: 400px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
 }
 
-.reset-wrapper button{
+.reset-wrapper button {
     color: #fff;
     background-color: #0078d7;
 }
 
-.reset-wrapper button:hover{
+.reset-wrapper button:hover {
     background-color: #005ca4;
 }
 
-.reset-header{
+.reset-header {
     font: 300 1.2rem/1.4 "Roboto";
 }
 
-.reset-text{
+.reset-text {
     font: 400 .8rem/1.2 "Roboto";
 }
 
-.reset-login{
+.reset-login {
     font: 400 .8rem/1 "Roboto";
 }
