@@ -16,42 +16,6 @@ p {
     margin-bottom: 0;
 }
 
-.w-100 {
-    width: 100%;
-}
-
-.color-dark-50 {
-    color: rgba(0, 0, 0, .5);
-}
-
-.color-dark-90 {
-    color: rgba(0, 0, 0, .9);
-}
-
-.mb-sm {
-    margin-bottom: .5rem;
-}
-
-.mb-md {
-    margin-bottom: 1rem;
-}
-
-.mb-lg {
-    margin-bottom: 3rem;
-}
-
-.mr-sm {
-    margin-right: .5rem;
-}
-
-.pd-1 {
-    padding: 1rem;
-}
-
-.pd-2 {
-    padding: 2rem;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -184,6 +148,7 @@ p {
 }
 
 .btn {
+    border: 0;
     align-items: center;
     cursor: pointer;
     display: flex;
@@ -191,6 +156,11 @@ p {
     justify-content: center;
     transition: background-color 80ms linear;
     color: #fff;
+    background: no-repeat center/20px #dedede;
+}
+
+.btn:hover {
+    background-color: #bfbfbf;
 }
 
 .github {
@@ -363,4 +333,39 @@ p {
 
 .reset-login {
     font: 400 .8rem/1 "Roboto";
+}
+.w-100 {
+    width: 100%;
+}
+
+.color-dark-50 {
+    color: rgba(0, 0, 0, .5);
+}
+
+.color-dark-90 {
+    color: rgba(0, 0, 0, .9);
+}
+
+.mb-sm {
+    margin-bottom: .5rem;
+}
+
+.mb-md {
+    margin-bottom: 1rem;
+}
+
+.mb-lg {
+    margin-bottom: 3rem;
+}
+
+.mr-sm {
+    margin-right: .5rem;
+}
+
+.pd-1 {
+    padding: 1rem;
+}
+
+.pd-2 {
+    padding: 2rem;
 }
