@@ -1,4 +1,4 @@
-# Mobile Center
+# Mobile Center Theme
 
 ## Assets
 * [Background](https://unsplash.com/search/computer?photo=Z3ownETsdNQ) 
