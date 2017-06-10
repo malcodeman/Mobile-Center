@@ -52,6 +52,12 @@ p {
     padding: 2rem;
 }
 
+/* todo */
+.link{
+    font: .8rem/1.2 "Roboto";
+    display: block;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -347,7 +353,7 @@ p {
     font: 300 1.2rem/1.4 "Roboto";
 }
 
-.reset-text {
+.reset-p {
     font: 400 .8rem/1.2 "Roboto";
 }
 
