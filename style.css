@@ -52,12 +52,6 @@ p {
     padding: 2rem;
 }
 
-/* todo */
-.link{
-    font: .8rem/1.2 "Roboto";
-    display: block;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -69,6 +63,8 @@ p {
         flex-direction: row;
     }
 }
+
+/* Hero */
 
 .hero-image {
     background: center/cover url(assets/bg.jpg);
@@ -180,6 +176,8 @@ p {
     font: .8rem/1 "Roboto";
 }
 
+/* Connect buttons */
+
 .content-buttons {
     display: flex;
     flex-direction: column;
@@ -233,6 +231,8 @@ p {
     background-image: url(assets/google.svg);
 }
 
+/* Divider */
+
 .content-divider {
     align-items: center;
     background-color: #dedede;
@@ -245,6 +245,8 @@ p {
     background-color: #fff;
 }
 
+/* Inputs */
+
 .input {
     background-color: #fff;
     border: 1px solid #dedede;
@@ -252,12 +254,12 @@ p {
     height: 40px;
 }
 
-.content-p{
+.input-p{
     font: .7rem/1.2 "Roboto";
     display: block;
 }
 
-.content-link {
+.input-link {
     font: .7rem/1.2 "Roboto";
     display: block;
 }
@@ -285,6 +287,8 @@ p {
         text-align: left;
     }
 }
+
+/* Footer */
 
 .content-legal {
     align-items: center;
