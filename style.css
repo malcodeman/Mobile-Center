@@ -217,18 +217,6 @@ p {
     display: block;
 }
 
-.account-btn {
-    background-color: #dedede;
-    border: 0;
-    cursor: pointer;
-    height: 40px;
-    transition: background-color 80ms linear;
-}
-
-.account-btn:hover {
-    background-color: #bfbfbf;
-}
-
 .link{
     font: .8rem/1 "Roboto";    
 }
