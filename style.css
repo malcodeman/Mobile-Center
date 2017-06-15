@@ -136,13 +136,14 @@ p {
     }
 }
 
-.content-grp {
+.footer {
     font: .8rem/1 "Roboto";
 }
 
 /* Buttons */
 
 .btn {
+    font: .8rem/1 "Roboto";
     border: 0;
     align-items: center;
     cursor: pointer;
@@ -197,6 +198,7 @@ p {
 }
 
 .or-text {
+    font: .8rem/1 "Roboto";
     background-color: #fff;
 }
 
@@ -207,11 +209,11 @@ p {
     border: 1px solid #dedede;
     box-sizing: border-box;
     height: 40px;
+    font: .8rem/1 "Roboto";
 }
 
-.input-p{
-    font: .7rem/1.2 "Roboto";
-    display: block;
+.input-warning{
+    font: 1rem/1.2 "Roboto";
 }
 
 .input-link {
@@ -231,16 +233,8 @@ p {
     background-color: #bfbfbf;
 }
 
-.signin-link {
-    color: #0078d7;
-    display: block;
-    text-align: center;
-}
-
-@media (min-width: 576px) {
-    .signin-link {
-        text-align: left;
-    }
+.link{
+    font: .8rem/1 "Roboto";    
 }
 
 /* Footer */
@@ -249,6 +243,16 @@ p {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.company-text{
+    font: .8rem/1 "Roboto";
+}
+
+@media (min-width: 576px) {
+    footer .link {
+        text-align: left;
+    }
 }
 
 @media (min-width: 576px) {
@@ -264,13 +268,13 @@ p {
 }
 
 @media (min-width: 576px) {
-    .company {
+    .company-text {
         margin-left: auto;
     }
 }
 
 @media (min-width: 992px) {
-    .company {
+    .company-text {
         display: none;
     }
 }
@@ -331,6 +335,10 @@ p {
     color: rgba(0, 0, 0, .9);
 }
 
+.color-blue{
+    color: #0078d7;
+}
+
 .mb-sm {
     margin-bottom: .5rem;
 }
@@ -353,4 +361,16 @@ p {
 
 .pd-2 {
     padding: 2rem;
+}
+
+.block{
+    display: block;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
 }
