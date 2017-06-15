@@ -47,6 +47,7 @@ p {
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex-grow: 1;
 }
 
@@ -76,7 +77,6 @@ p {
 
 .hero-company {
     font: .8rem/1 "Roboto";
-    margin-top: auto;
 }
 
 .banner {
@@ -212,15 +212,6 @@ p {
     font: 1rem/1.2 "Roboto";
 }
 
-.input-link {
-    font: .7rem/1.2 "Roboto";
-    display: block;
-}
-
-.link{
-    font: .8rem/1 "Roboto";    
-}
-
 /* Footer */
 
 .content-legal {
@@ -242,12 +233,6 @@ p {
 @media (min-width: 576px) {
     .content-legal {
         flex-direction: row;
-    }
-}
-
-@media (min-width: 576px) {
-    .legal-link {
-        margin-bottom: 0;
     }
 }
 
@@ -307,6 +292,13 @@ p {
 .reset-login {
     font: 400 .8rem/1 "Roboto";
 }
+
+
+
+.link{
+    font: .8rem/1 "Roboto";    
+}
+
 .w-100 {
     width: 100%;
 }
