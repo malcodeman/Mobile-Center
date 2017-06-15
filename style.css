@@ -250,7 +250,7 @@ p {
 }
 
 @media (min-width: 576px) {
-    footer .link {
+    footer > .link {
         text-align: left;
     }
 }
