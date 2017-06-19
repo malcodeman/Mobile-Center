@@ -108,7 +108,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 320px;
 }
 
 @media (min-width: 992px) {
@@ -306,6 +305,14 @@ p {
 
 .w-100 {
     width: 100%;
+}
+
+.mw-320{
+    max-width: 320px;
+}
+
+.mw-380{
+    max-width: 380px;
 }
 
 .color-white{
