@@ -67,13 +67,6 @@ p {
     font: 1rem/1.2 "Roboto";
 }
 
-.list {
-    font: .8rem/1.4 "Roboto";
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-}
-
 .hero-company {
     font: .8rem/1 "Roboto";
 }
@@ -113,13 +106,8 @@ p {
     max-width: 320px;
 }
 
-.content-header {
-    font: 400 1.2rem/1.4 "Roboto";
-    text-align: center;
-}
-
 @media (min-width: 992px) {
-    .content-header {
+    main header .h1 {
         text-align: left;
     }
 }
@@ -290,6 +278,18 @@ p {
 }
 
 
+/* Mini framework */
+
+.h1 {
+    font: 400 1.2rem/1.4 "Roboto";
+}
+
+.list {
+    font: .8rem/1.4 "Roboto";
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
 
 .link{
     font: .8rem/1 "Roboto";    
