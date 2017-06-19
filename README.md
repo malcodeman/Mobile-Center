@@ -1,3 +1,4 @@
+![Preview image](/assets/preview.png?raw=true)
 # Mobile Center Theme
 
 ## Assets
