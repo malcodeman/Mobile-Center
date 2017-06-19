@@ -148,10 +148,6 @@ p {
     background-color: #005ca4;
 }
 
-.social-buttons {
-    display: flex;
-}
-
 .facebook {
     background-image: url(assets/facebook.svg);
 }
@@ -341,6 +337,10 @@ p {
 
 .pd-2 {
     padding: 2rem;
+}
+
+.flex{
+    display: flex;
 }
 
 .block{
