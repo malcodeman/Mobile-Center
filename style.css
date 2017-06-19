@@ -55,10 +55,6 @@ p {
     flex-grow: 1;
 }
 
-.hero-info {
-    max-width: 380px;
-}
-
 .logo {
     align-items: center;
     background: repeat-x center url(assets/logo.jpg);
@@ -66,14 +62,6 @@ p {
     font: 300 1.2rem/1 "Roboto";
     height: 40px;
     justify-content: center;
-}
-
-.hero-p {
-    font: 1rem/1.2 "Roboto";
-}
-
-.hero-company {
-    font: .8rem/1 "Roboto";
 }
 
 .banner {
@@ -226,13 +214,13 @@ p {
 }
 
 @media (min-width: 576px) {
-    .company-text {
+    footer .content-legal .company-text {
         margin-left: auto;
     }
 }
 
 @media (min-width: 992px) {
-    .company-text {
+    footer .content-legal .company-text {
         display: none;
     }
 }
