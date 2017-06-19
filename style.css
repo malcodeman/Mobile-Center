@@ -44,7 +44,6 @@ p {
 
 .hero-content {
     background-color: rgba(0, 0, 0, .2);
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -301,6 +300,10 @@ p {
 
 .w-100 {
     width: 100%;
+}
+
+.color-white{
+    color: #fff;
 }
 
 .color-dark-50 {
