@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="banner">
-        <span class="color-white">Visual Studio Mobile center</span>
+        <h2 class="h2">Visual Studio Mobile center</h2>
     </div>
     <main class="main-container">
         <div class="main-content">
@@ -46,10 +46,12 @@
                     <div class="content-divider">
                         <span class="divider-text">or</span>
                     </div>
-                    <input class="input" type="text" placeholder="Email or username" autofocus="autofocus" />
-                    <input class="input" type="password" placeholder="Password" />
+                    <input id="email" class="input" type="text" placeholder="Email or username" autofocus="autofocus" />
+                    <p id="email_error_msg" class="input-warning warning-red">Email adress is required.</p>
+                    <input id="password" class="input" type="password" placeholder="Password" />
+                    <p id="password_error_msg" class="input-warning warning-red">Password is required.</p>
                     <a class="redirect-link" href="#">Forgot password?</a>
-                    <button class="btn">Sign in</button>
+                    <button id="cta_btn" class="btn">Sign in</button>
                 </div>
             </section>
             <footer>
@@ -65,3 +67,4 @@
         </div>
     </main>
 </div>
+<script src="assets/js/script.js"></script>

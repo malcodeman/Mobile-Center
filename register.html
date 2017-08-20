@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="banner">
-        <span class="color-white">Visual Studio Mobile center</span>
+        <h2 class="h2">Visual Studio Mobile center</h2>
     </div>
     <main class="main-container">
         <div class="main-content">
@@ -46,11 +46,13 @@
                     <div class="content-divider">
                         <span class="divider-text">or</span>
                     </div>
-                    <input class="input" type="email" placeholder="Email" autofocus="autofocus" />
-                    <input class="input" type="text" placeholder="Username" />
-                    <input class="input" type="password" placeholder="Password" />
-                    <p class="input-warning">At least 8 chars with caps and lowercase letters</p>
-                    <button class="btn">Create account</button>
+                    <input id="email" class="input" type="email" placeholder="Email" autofocus="autofocus" />
+                    <p id="email_error_msg" class="input-warning warning-red">Email adress is required.</p>
+                    <input id="username" class="input" type="text" placeholder="Username" />
+                    <p id="username_error_msg" class="input-warning warning-red">Username is required.</p>                    
+                    <input id="password" class="input" type="password" placeholder="Password" />
+                    <p id="password_error_msg" class="input-warning show-warning">At least 8 chars with caps and lowercase letters.</p>
+                    <button id="cta_btn" class="btn">Create account</button>
                 </div>
             </section>
             <footer>
@@ -66,3 +68,4 @@
         </div>
     </main>
 </div>
+<script src="assets/js/script.js"></script>
