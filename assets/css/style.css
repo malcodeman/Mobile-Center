@@ -14,6 +14,18 @@ a {
     text-decoration: none;
 }
 
+button {
+    padding: 0;
+}
+
+.h1 {
+    font: 400 1.2rem/1.4 Roboto;
+}
+
+.h2 {
+    font: 400 1rem/1.2 Roboto;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -123,6 +135,8 @@ a {
 @media (min-width: 992px) {
     .main-container {
         flex-grow: 0;
+        max-width: 380px;
+        width: 100%;
     }
 }
 
@@ -153,6 +167,9 @@ a {
     }
 }
 
+
+/* Main heading breaks when hero content shows up */
+
 .break {
     display: inline;
 }
@@ -170,8 +187,9 @@ a {
     padding: 2rem;
 }
 
-
-/* Buttons */
+.connect-btns-vertical {
+    margin-bottom: .5rem;
+}
 
 .btn {
     font: .8rem/1 "Roboto";
@@ -183,10 +201,23 @@ a {
     justify-content: center;
     transition: background-color 80ms linear;
     background: no-repeat center/20px #dedede;
+    width: 100%;
 }
 
 .btn:hover {
     background-color: #bfbfbf;
+}
+
+.connect-btns-vertical .btn {
+    color: #fff;
+    margin-bottom: .5rem;
+}
+
+
+/* Removes margin bottom from the last vertical button */
+
+.connect-btns-vertical .btn:last-child {
+    margin-bottom: 0;
 }
 
 .github {
@@ -203,6 +234,18 @@ a {
 
 .microsoft:hover {
     background-color: #005ca4;
+}
+
+.connect-btns-horizontal {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+
+/* Addes margin right to the first horizontal connect button, facebook */
+
+.connect-btns-horizontal .btn:nth-child(1) {
+    margin-right: .5rem;
 }
 
 .facebook {
@@ -222,15 +265,18 @@ a {
     display: flex;
     height: 1px;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
-.or-text {
+.divider-text {
     font: .8rem/1 "Roboto";
+    color: rgba(0, 0, 0, .5);
     background-color: #fff;
+    padding: 1rem;
 }
 
 
-/* Inputs */
+/* Input */
 
 .input {
     background-color: #fff;
@@ -238,10 +284,37 @@ a {
     box-sizing: border-box;
     height: 40px;
     font: .8rem/1 "Roboto";
+    width: 100%;
+    margin-bottom: .5rem;
+    text-indent: 1rem;
+    color: rgba(0, 0, 0, .9);
+}
+
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder */
+
+.input::placeholder {
+    color: rgba(0, 0, 0, .5);
+}
+
+.section-content .redirect-link {
+    font: .8rem/1.2 "Roboto";
+    margin-bottom: .5rem;
+    color: #0078d7;
+    display: block;
 }
 
 .input-warning {
-    font: 1rem/1.2 "Roboto";
+    font: .8rem/1.2 "Roboto";
+    color: rgba(0, 0, 0, .5);
+    margin-bottom: .5rem;
+}
+
+
+/* Call to action button */
+
+.section-content button {
+    color: rgba(0, 0, 0, .9);
 }
 
 
@@ -319,83 +392,4 @@ a {
     .legal-links .company-text {
         display: none;
     }
-}
-
-
-/* Mini framework */
-
-.h1 {
-    font: 400 1.2rem/1.4 Roboto;
-}
-
-.h2 {
-    font: 400 1rem/1.2 Roboto;
-}
-
-.link {
-    font: .8rem/1 "Roboto";
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.mw-320 {
-    max-width: 320px;
-}
-
-.color-white {
-    color: #fff;
-}
-
-.color-dark-50 {
-    color: rgba(0, 0, 0, .5);
-}
-
-.color-dark-90 {
-    color: rgba(0, 0, 0, .9);
-}
-
-.color-blue {
-    color: #0078d7;
-}
-
-.mb-sm {
-    margin-bottom: .5rem;
-}
-
-.mb-md {
-    margin-bottom: 1rem;
-}
-
-.mb-lg {
-    margin-bottom: 3rem;
-}
-
-.mr-sm {
-    margin-right: .5rem;
-}
-
-.pd-1 {
-    padding: 1rem;
-}
-
-.pd-2 {
-    padding: 2rem;
-}
-
-.flex {
-    display: flex;
-}
-
-.block {
-    display: block;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-left {
-    text-align: left;
 }
