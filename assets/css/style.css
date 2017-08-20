@@ -6,14 +6,12 @@ p {
     margin: 0;
 }
 
-ul {
-    padding-left: 0;
-}
-
 a {
     text-decoration: none;
 }
 
+ul,
+input,
 button {
     padding: 0;
 }
@@ -313,15 +311,15 @@ button {
     display: none;
 }
 
-.warning-red{
+.warning-red {
     color: #c43e27;
 }
 
-.warning-green{
+.warning-green {
     color: #6fa22e;
 }
 
-.show-warning{
+.show-warning {
     display: block;
 }
 
