@@ -62,9 +62,9 @@ a {
 }
 
 
-/* Header text */
+/* Header text, header content h1 repeats in main content */
 
-.header-content .h1 {
+.hero-content .header-content .h1 {
     align-items: center;
     background: repeat-x center url(images/logo.jpg);
     display: flex;
@@ -89,6 +89,10 @@ a {
     margin-bottom: 1rem;
 }
 
+.hero-content .footer-content .company-text {
+    font: .8rem/1.4 "Roboto";
+}
+
 
 /* Banner */
 
@@ -110,27 +114,41 @@ a {
 
 /* Main */
 
-.main {
+.main-container {
     display: flex;
     flex-grow: 1;
     justify-content: center;
-    margin: 0 auto;
 }
 
 @media (min-width: 992px) {
-    .main {
+    .main-container {
         flex-grow: 0;
     }
 }
 
-.content-wrapper {
+.main-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    max-width: 380px;
+}
+
+
+/* Header */
+
+.main-container .main-content .header-content {
+    /* Setting padding like this avoids using box-sizing in main content */
+    padding: 2rem;
+}
+
+.main-container .header-content .h1 {
+    color: rgba(0, 0, 0, .9);
+    text-align: center;
 }
 
 @media (min-width: 992px) {
-    main header .h1 {
+    .main-container .header-content .h1 {
         text-align: left;
     }
 }
@@ -143,6 +161,13 @@ a {
     .break {
         display: block;
     }
+}
+
+
+/* Section */
+
+.main-content .section-content {
+    padding: 2rem;
 }
 
 
@@ -222,39 +247,80 @@ a {
 
 /* Footer */
 
-.content-legal {
+.main-content .footer-content {
+    padding: 2rem;
+}
+
+
+/* Register/Login redirect link */
+
+.footer-content .redirect-link {
+    font: .8rem/1.4 "Roboto";
+    color: #0078d7;
+    text-align: center;
+    /* Display block is necessary in order for text align and margin to work */
+    display: block;
+    margin-bottom: .5rem;
+}
+
+@media (min-width: 576px) {
+    .footer-content .redirect-link {
+        text-align: unset;
+    }
+}
+
+.legal-links {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.company-text {
-    font: .8rem/1 "Roboto";
-}
-
 @media (min-width: 576px) {
-    footer .link {
-        text-align: left;
-    }
-}
-
-@media (min-width: 576px) {
-    .content-legal {
+    .legal-links {
         flex-direction: row;
     }
 }
 
+.legal-links .link {
+    color: rgba(0, 0, 0, .5);
+    font: .8rem/1.4 "Roboto";
+}
+
+
+/* Adds margin right for the first link in content legal */
+
 @media (min-width: 576px) {
-    footer .content-legal .company-text {
+    .legal-links .link:nth-child(1) {
+        margin-right: 1rem;
+    }
+}
+
+
+/* There is company text class in hero content footer */
+
+.main-content .footer-content .company-text {
+    font: .8rem/1.4 "Roboto";
+    color: rgba(0, 0, 0, .5);
+}
+
+
+/* Pushes company text to the right */
+
+@media (min-width: 576px) {
+    .legal-links .company-text {
         margin-left: auto;
     }
 }
 
+
+/* Hides company text from main content footer because hero content is now visible */
+
 @media (min-width: 992px) {
-    footer .content-legal .company-text {
+    .legal-links .company-text {
         display: none;
     }
 }
+
 
 /* Mini framework */
 
