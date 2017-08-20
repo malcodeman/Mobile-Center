@@ -1,4 +1,3 @@
-
 function validaEmail() {
     "use strict";
     var email, email_error_msg;
@@ -8,9 +7,7 @@ function validaEmail() {
         email_error_msg.classList.add("show-warning");
         return false;
     } else {
-        if (email_error_msg.classList.contains("show-warning")) {
-            email_error_msg.classList.remove("show-warning");
-        }
+        email_error_msg.classList.remove("show-warning");
         return true;
     }
 }
@@ -24,9 +21,7 @@ function validateUsername() {
         username_error_msg.classList.add("show-warning");
         return false;
     } else {
-        if (username_error_msg.classList.contains("show-warning")) {
-            username_error_msg.classList.remove("show-warning");
-        }
+        username_error_msg.classList.remove("show-warning");
         return true;
     }
 }
@@ -45,9 +40,7 @@ function validatePassword() {
         }
         return false;
     } else {
-        if (password_error_msg.classList.contains("show-warning")) {
-            password_error_msg.classList.remove("show-warning");
-        }
+        password_error_msg.classList.remove("show-warning");
         return true;
     }
 }
@@ -66,14 +59,14 @@ function validateForm() {
         }
     } else {
         if (validEmail === true && validPassword === true && validUsername === true) {
-            window.location.href = "login.html";
+            window.console.log("Good login");
         }
     }
 }
 
 function main() {
     "use strict";
-    var valja = document.getElementById("cta_btn").addEventListener("click", validateForm);
+    document.getElementById("cta_btn").addEventListener("click", validateForm);
     // Login doesn't have username input so it needs to be checked
     if (document.getElementById("username")) {
         document.getElementById("username").addEventListener("input", validateUsername);
