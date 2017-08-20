@@ -1,7 +1,7 @@
 # Mobile Center Theme
 Template for register/login page.
 
-![Preview image](screenshots/register.png)
+![Login page](screenshots/login.png)
 
 ## Assets
 * [Background image 1](https://unsplash.com/photos/Z3ownETsdNQ)
