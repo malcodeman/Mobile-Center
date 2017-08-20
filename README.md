@@ -4,7 +4,9 @@ Template for register/login page.
 ![Preview image](screenshots/register.png)
 
 ## Assets
-* [Background image](https://unsplash.com/search/computer?photo=Z3ownETsdNQ)
+* [Background image 1](https://unsplash.com/photos/Z3ownETsdNQ)
+* [Background image 2](https://unsplash.com/photos/v8pE7-pukyY)
+* [Background image 3](https://unsplash.com/photos/GiIZSko7Guk)
 * [Logo image](http://thepatternlibrary.com/#kale-salad)
 * [Facebook icon](http://www.flaticon.com/free-icon/facebook_124010) 
 * [Google icon](http://www.flaticon.com/free-icon/search_281764) 
