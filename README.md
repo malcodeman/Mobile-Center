@@ -1,6 +1,10 @@
 # Mobile Center Theme
 Template for register/login page.
 
+Completely responsive and adaptive user interface.
+
+Basic form validation.
+
 ![Login page](screenshots/login.png)
 
 ## Assets
