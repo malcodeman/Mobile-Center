@@ -3,406 +3,384 @@ ul,
 h1,
 h2,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul,
 input,
 button {
-    padding: 0;
+  padding: 0;
 }
 
 .h1 {
-    font: 400 1.2rem/1.4 Roboto;
+  font: 400 1.2rem/1.4 Roboto;
 }
 
 .h2 {
-    font: 400 1rem/1.2 Roboto;
+  font: 400 1rem/1.2 Roboto;
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @media (min-width: 992px) {
-    .page {
-        flex-direction: row;
-    }
+  .page {
+    flex-direction: row;
+  }
 }
-
 
 /* Hero */
 
 .hero-container {
-    /* There are 3 test backgrounds available */
-    background: #0078D7 center/cover url(images/backgrounds/bg3.jpg);
-    display: none;
+  /* There are 3 test backgrounds available */
+  background: #0078d7 center/cover url(images/backgrounds/bg3.jpg);
+  display: none;
 }
 
 @media (min-width: 992px) {
-    .hero-container {
-        display: flex;
-        flex-grow: 1;
-    }
+  .hero-container {
+    display: flex;
+    flex-grow: 1;
+  }
 }
-
 
 /* Color overlay is needed for text to be clearly visible */
 
 .hero-content {
-    background-color: rgba(0, 0, 0, .2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-    padding: 2rem;
-    color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 2rem;
+  color: #fff;
 }
-
 
 /* Max width is need so that header content doesn't go full width */
 
 .header-content {
-    max-width: 380px;
+  max-width: 380px;
 }
-
 
 /* Header text, header content h1 repeats in main content */
 
 .hero-content .header-content .h1 {
-    align-items: center;
-    background: repeat-x center url(images/logo.jpg);
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    margin-bottom: 2rem;
+  align-items: center;
+  background: repeat-x center url(images/logo.jpg);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
-
 
 /* Subheader text */
 
 .header-content .h2 {
-    margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .list {
-    font: .8rem/1.4 "Roboto";
-    list-style-type: none;
+  font: 0.8rem/1.4 "Roboto";
+  list-style-type: none;
 }
 
 .header-content .list .list-item {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .hero-content .footer-content .company-text {
-    font: .8rem/1.4 "Roboto";
+  font: 0.8rem/1.4 "Roboto";
 }
-
 
 /* Banner */
 
 .banner {
-    align-items: center;
-    background-color: #0078d7;
-    display: flex;
-    font: 400 .8rem/1.2 "Roboto";
-    justify-content: center;
-    height: 40px;
-    color: #fff;
+  align-items: center;
+  background-color: #0078d7;
+  display: flex;
+  font: 400 0.8rem/1.2 "Roboto";
+  justify-content: center;
+  height: 40px;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
-    .banner {
-        display: none;
-    }
+  .banner {
+    display: none;
+  }
 }
-
 
 /* Main */
 
 .main-container {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 @media (min-width: 992px) {
-    .main-container {
-        flex-grow: 0;
-        max-width: 380px;
-        width: 100%;
-    }
+  .main-container {
+    flex-grow: 0;
+    max-width: 380px;
+    width: 100%;
+  }
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 380px;
 }
-
 
 /* Header */
 
 .main-container .main-content .header-content {
-    /* Setting padding like this avoids using box-sizing in main content */
-    padding: 2rem;
+  /* Setting padding like this avoids using box-sizing in main content */
+  padding: 2rem;
 }
 
 .main-container .header-content .h1 {
-    color: rgba(0, 0, 0, .9);
-    text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
 }
 
 @media (min-width: 992px) {
-    .main-container .header-content .h1 {
-        text-align: left;
-    }
+  .main-container .header-content .h1 {
+    text-align: left;
+  }
 }
-
 
 /* Main heading breaks when hero content shows up */
 
 .break {
-    display: inline;
+  display: inline;
 }
 
 @media (min-width: 992px) {
-    .break {
-        display: block;
-    }
+  .break {
+    display: block;
+  }
 }
-
 
 /* Section */
 
 .main-content .section-content {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .connect-btns-vertical {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn {
-    font: .8rem/1 "Roboto";
-    border: 0;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    transition: background-color 80ms linear;
-    background: no-repeat center/20px #dedede;
-    width: 100%;
+  font: 0.8rem/1 "Roboto";
+  border: 0;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  transition: background-color 80ms linear;
+  background: no-repeat center/20px #dedede;
+  width: 100%;
 }
 
 .btn:hover {
-    background-color: #bfbfbf;
+  background-color: #bfbfbf;
 }
 
 .connect-btns-vertical .btn {
-    color: #fff;
-    margin-bottom: .5rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
 }
-
 
 /* Removes margin bottom from the last vertical button */
 
 .connect-btns-vertical .btn:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .github {
-    background-color: #303030;
+  background-color: #303030;
 }
 
 .github:hover {
-    background-color: #171717;
+  background-color: #171717;
 }
 
 .microsoft {
-    background-color: #0a416e;
+  background-color: #0a416e;
 }
 
 .microsoft:hover {
-    background-color: #005ca4;
+  background-color: #005ca4;
 }
 
 .connect-btns-horizontal {
-    display: flex;
-    margin-bottom: 3rem;
+  display: flex;
+  margin-bottom: 3rem;
 }
-
 
 /* Addes margin right to the first horizontal connect button, facebook */
 
 .connect-btns-horizontal .btn:nth-child(1) {
-    margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .facebook {
-    background-image: url(images/icons/facebook.svg);
+  background-image: url(images/icons/facebook.svg);
 }
 
 .google {
-    background-image: url(images/icons/google.svg);
+  background-image: url(images/icons/google.svg);
 }
-
 
 /* Divider */
 
 .content-divider {
-    align-items: center;
-    background-color: #dedede;
-    display: flex;
-    height: 1px;
-    justify-content: center;
-    margin-bottom: 3rem;
+  align-items: center;
+  background-color: #dedede;
+  display: flex;
+  height: 1px;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .divider-text {
-    font: .8rem/1 "Roboto";
-    color: rgba(0, 0, 0, .5);
-    background-color: #fff;
-    padding: 1rem;
+  font: 0.8rem/1 "Roboto";
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  padding: 1rem;
 }
-
 
 /* Input */
 
 .input {
-    background-color: #fff;
-    border: 1px solid #dedede;
-    box-sizing: border-box;
-    height: 40px;
-    font: .8rem/1 "Roboto";
-    width: 100%;
-    margin-bottom: .5rem;
-    text-indent: 1rem;
-    color: rgba(0, 0, 0, .9);
+  background-color: #fff;
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  height: 40px;
+  font: 0.8rem/1 "Roboto";
+  width: 100%;
+  margin-bottom: 0.5rem;
+  text-indent: 1rem;
+  color: rgba(0, 0, 0, 0.9);
 }
-
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder */
 
 .input::placeholder {
-    color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .section-content .redirect-link {
-    font: .8rem/1.2 "Roboto";
-    margin-bottom: .5rem;
-    color: #0078d7;
-    display: block;
+  font: 0.8rem/1.2 "Roboto";
+  margin-bottom: 0.5rem;
+  color: #0078d7;
+  display: block;
 }
 
 .input-warning {
-    font: .8rem/1.2 "Roboto";
-    color: rgba(0, 0, 0, .5);
-    margin-bottom: .5rem;
-    display: none;
+  font: 0.8rem/1.2 "Roboto";
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+  display: none;
 }
 
 .warning-red {
-    color: #c43e27;
+  color: #c43e27;
 }
 
 .warning-green {
-    color: #6fa22e;
+  color: #6fa22e;
 }
 
 .show-warning {
-    display: block;
+  display: block;
 }
-
 
 /* Call to action button */
 
 .section-content button {
-    color: rgba(0, 0, 0, .9);
+  color: rgba(0, 0, 0, 0.9);
 }
-
 
 /* Footer */
 
 .main-content .footer-content {
-    padding: 2rem;
+  padding: 2rem;
 }
-
 
 /* Register/Login redirect link */
 
 .footer-content .redirect-link {
-    font: .8rem/1.4 "Roboto";
-    color: #0078d7;
-    text-align: center;
-    /* Display block is necessary in order for text align and margin to work */
-    display: block;
-    margin-bottom: .5rem;
+  font: 0.8rem/1.4 "Roboto";
+  color: #0078d7;
+  text-align: center;
+  /* Display block is necessary in order for text align and margin to work */
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 576px) {
-    .footer-content .redirect-link {
-        text-align: unset;
-    }
+  .footer-content .redirect-link {
+    text-align: unset;
+  }
 }
 
 .legal-links {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 576px) {
-    .legal-links {
-        flex-direction: row;
-    }
+  .legal-links {
+    flex-direction: row;
+  }
 }
 
 .legal-links .link {
-    color: rgba(0, 0, 0, .5);
-    font: .8rem/1.4 "Roboto";
+  color: rgba(0, 0, 0, 0.5);
+  font: 0.8rem/1.4 "Roboto";
 }
-
 
 /* Adds margin right for the first link in content legal */
 
 @media (min-width: 576px) {
-    .legal-links .link:nth-child(1) {
-        margin-right: 1rem;
-    }
+  .legal-links .link:nth-child(1) {
+    margin-right: 1rem;
+  }
 }
-
 
 /* There is company text class in hero content footer */
 
 .main-content .footer-content .company-text {
-    font: .8rem/1.4 "Roboto";
-    color: rgba(0, 0, 0, .5);
+  font: 0.8rem/1.4 "Roboto";
+  color: rgba(0, 0, 0, 0.5);
 }
-
 
 /* Pushes company text to the right */
 
 @media (min-width: 576px) {
-    .legal-links .company-text {
-        margin-left: auto;
-    }
+  .legal-links .company-text {
+    margin-left: auto;
+  }
 }
-
 
 /* Hides company text from main content footer because hero content is now visible */
 
 @media (min-width: 992px) {
-    .legal-links .company-text {
-        display: none;
-    }
+  .legal-links .company-text {
+    display: none;
+  }
 }
