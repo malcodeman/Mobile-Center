@@ -159,18 +159,6 @@ button {
   }
 }
 
-/* Main heading breaks when hero content shows up */
-
-.break {
-  display: inline;
-}
-
-@media (min-width: 992px) {
-  .break {
-    display: block;
-  }
-}
-
 /* Section */
 
 .main-content .section-content {

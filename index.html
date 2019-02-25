@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <script src="assets/js/script.js" defer></script>
-    <title>Login</title>
+    <title>Sign up</title>
   </head>
   <body>
     <div class="page">
@@ -54,7 +54,7 @@
           <header>
             <div class="header-content">
               <h1 class="h1">
-                Sign in
+                Sign up
               </h1>
             </div>
           </header>
@@ -74,12 +74,21 @@
               <input
                 id="email"
                 class="input"
-                type="text"
-                placeholder="Email or username"
+                type="email"
+                placeholder="Email"
                 autofocus="autofocus"
               />
               <p id="email_error_msg" class="input-warning warning-red">
                 Email adress is required.
+              </p>
+              <input
+                id="username"
+                class="input"
+                type="text"
+                placeholder="Username"
+              />
+              <p id="username_error_msg" class="input-warning warning-red">
+                Username is required.
               </p>
               <input
                 id="password"
@@ -87,17 +96,16 @@
                 type="password"
                 placeholder="Password"
               />
-              <p id="password_error_msg" class="input-warning warning-red">
-                Password is required.
+              <p id="password_error_msg" class="input-warning show-warning">
+                At least 8 chars with caps and lowercase letters.
               </p>
-              <a class="redirect-link" href="#">Forgot password?</a>
-              <button id="cta_btn" class="btn">Sign in</button>
+              <button id="cta_btn" class="btn">Create account</button>
             </div>
           </section>
           <footer>
             <div class="footer-content">
-              <a class="redirect-link" href="index.html"
-                >Create a new account</a
+              <a class="redirect-link" href="login.html"
+                >I already have an account</a
               >
               <div class="legal-links">
                 <a class="link" href="#">Terms of use</a>
