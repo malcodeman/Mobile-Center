@@ -281,19 +281,6 @@ button {
   font: 0.8rem/1.2 "Roboto";
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 0.5rem;
-  display: none;
-}
-
-.warning-red {
-  color: #c43e27;
-}
-
-.warning-green {
-  color: #6fa22e;
-}
-
-.show-warning {
-  display: block;
 }
 
 /* Call to action button */

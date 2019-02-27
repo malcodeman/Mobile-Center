@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
-    <script src="assets/js/script.js" defer></script>
     <title>Sign up</title>
   </head>
   <body>
@@ -71,35 +70,32 @@
               <div class="content-divider">
                 <span class="divider-text">or</span>
               </div>
-              <input
-                id="email"
-                class="input"
-                type="email"
-                placeholder="Email"
-                autofocus="autofocus"
-              />
-              <p id="email_error_msg" class="input-warning warning-red">
-                Email adress is required.
-              </p>
-              <input
-                id="username"
-                class="input"
-                type="text"
-                placeholder="Username"
-              />
-              <p id="username_error_msg" class="input-warning warning-red">
-                Username is required.
-              </p>
-              <input
-                id="password"
-                class="input"
-                type="password"
-                placeholder="Password"
-              />
-              <p id="password_error_msg" class="input-warning show-warning">
-                At least 8 chars with caps and lowercase letters.
-              </p>
-              <button id="cta_btn" class="btn">Create account</button>
+              <form>
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Email"
+                  autofocus="autofocus"
+                  required="true"
+                />
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Username"
+                  required="true"
+                />
+                <input
+                  class="input"
+                  type="password"
+                  placeholder="Password"
+                  required="true"
+                  pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                />
+                <p class="input-warning">
+                  At least 8 chars with caps and lowercase letters.
+                </p>
+                <button class="btn">Create account</button>
+              </form>
             </div>
           </section>
           <footer>
