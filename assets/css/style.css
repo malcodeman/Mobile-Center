@@ -1,9 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body,
 ul,
 h1,
 h2,
 p {
   margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -17,61 +31,61 @@ button {
 }
 
 .h1 {
-  font: 400 1.2rem/1.4 Roboto;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .h2 {
-  font: 400 1rem/1.2 Roboto;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr;
   min-height: 100vh;
 }
 
 @media (min-width: 992px) {
   .page {
-    flex-direction: row;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: initial;
   }
 }
 
 /* Hero */
 
 .hero-container {
-  /* There are 3 test backgrounds available */
-  background: #0078d7 center/cover url(images/backgrounds/bg3.jpg);
+  background-color: #0078d7;
+  background-position: center;
+  background-size: cover;
+  background-image: url(images/backgrounds/bg1.jpg);
   display: none;
 }
 
 @media (min-width: 992px) {
   .hero-container {
-    display: flex;
-    flex-grow: 1;
+    display: initial;
   }
 }
-
-/* Color overlay is needed for text to be clearly visible */
 
 .hero-content {
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-grow: 1;
+  height: 100%;
   padding: 2rem;
   color: #fff;
 }
 
-/* Max width is need so that header content doesn't go full width */
-
-.header-content {
+.hero-content-header {
   max-width: 380px;
 }
 
 /* Header text, header content h1 repeats in main content */
 
-.hero-content .header-content .h1 {
+.hero-content .hero-content-header .h1 {
   align-items: center;
   background: repeat-x center url(images/logo.jpg);
   display: flex;
@@ -80,32 +94,31 @@ button {
   margin-bottom: 2rem;
 }
 
-/* Subheader text */
-
-.header-content .h2 {
+.hero-content-header .h2 {
   margin-bottom: 1.2rem;
 }
 
 .list {
-  font: 0.8rem/1.4 "Roboto";
+  font-size: 0.8rem;
   list-style-type: none;
 }
 
-.header-content .list .list-item {
+.hero-content-header .list .list-item {
   margin-bottom: 1rem;
 }
 
-.hero-content .footer-content .company-text {
-  font: 0.8rem/1.4 "Roboto";
-}
+/* Company text repeats in main content */
 
-/* Banner */
+.hero-content .hero-content-footer .company-text {
+  font-size: 0.8rem;
+}
 
 .banner {
   align-items: center;
   background-color: #0078d7;
   display: flex;
-  font: 400 0.8rem/1.2 "Roboto";
+  font-weight: 400;
+  font-size: 0.8rem;
   justify-content: center;
   height: 40px;
   color: #fff;
@@ -121,16 +134,7 @@ button {
 
 .main-container {
   display: flex;
-  flex-grow: 1;
   justify-content: center;
-}
-
-@media (min-width: 992px) {
-  .main-container {
-    flex-grow: 0;
-    max-width: 380px;
-    width: 100%;
-  }
 }
 
 .main-content {
@@ -143,25 +147,24 @@ button {
 
 /* Header */
 
-.main-container .main-content .header-content {
-  /* Setting padding like this avoids using box-sizing in main content */
+.main-container .main-content .main-content-header {
   padding: 2rem;
 }
 
-.main-container .header-content .h1 {
+.main-container .main-content-header .h1 {
   color: rgba(0, 0, 0, 0.9);
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  .main-container .header-content .h1 {
+  .main-container .main-content-header .h1 {
     text-align: left;
   }
 }
 
 /* Section */
 
-.main-content .section-content {
+.main-content .main-content-section {
   padding: 2rem;
 }
 
@@ -170,7 +173,7 @@ button {
 }
 
 .btn {
-  font: 0.8rem/1 "Roboto";
+  font-size: 0.8rem;
   border: 0;
   align-items: center;
   cursor: pointer;
@@ -178,7 +181,10 @@ button {
   height: 40px;
   justify-content: center;
   transition: background-color 80ms linear;
-  background: no-repeat center/20px #dedede;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  background-color: #dedede;
   width: 100%;
 }
 
@@ -190,8 +196,6 @@ button {
   color: #fff;
   margin-bottom: 0.5rem;
 }
-
-/* Removes margin bottom from the last vertical button */
 
 .connect-btns-vertical .btn:last-child {
   margin-bottom: 0;
@@ -218,9 +222,7 @@ button {
   margin-bottom: 3rem;
 }
 
-/* Addes margin right to the first horizontal connect button, facebook */
-
-.connect-btns-horizontal .btn:nth-child(1) {
+.connect-btns-horizontal .facebook {
   margin-right: 0.5rem;
 }
 
@@ -244,61 +246,56 @@ button {
 }
 
 .divider-text {
-  font: 0.8rem/1 "Roboto";
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5);
   background-color: #fff;
   padding: 1rem;
 }
 
-/* Input */
-
 .input {
   background-color: #fff;
   border: 1px solid #dedede;
-  box-sizing: border-box;
   height: 40px;
-  font: 0.8rem/1 "Roboto";
+  font-size: 0.8rem;
   width: 100%;
   margin-bottom: 0.5rem;
   text-indent: 1rem;
   color: rgba(0, 0, 0, 0.9);
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder */
-
 .input::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.section-content .redirect-link {
-  font: 0.8rem/1.2 "Roboto";
+.main-content-section .redirect-link {
+  font-size: 0.8rem;
   margin-bottom: 0.5rem;
   color: #0078d7;
   display: block;
 }
 
 .input-warning {
-  font: 0.8rem/1.2 "Roboto";
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 0.5rem;
 }
 
 /* Call to action button */
 
-.section-content button {
+.main-content-section button {
   color: rgba(0, 0, 0, 0.9);
 }
 
 /* Footer */
 
-.main-content .footer-content {
+.main-content .main-content-footer {
   padding: 2rem;
 }
 
 /* Register/Login redirect link */
 
-.footer-content .redirect-link {
-  font: 0.8rem/1.4 "Roboto";
+.main-content-footer .redirect-link {
+  font-size: 0.8rem;
   color: #0078d7;
   text-align: center;
   /* Display block is necessary in order for text align and margin to work */
@@ -307,8 +304,8 @@ button {
 }
 
 @media (min-width: 576px) {
-  .footer-content .redirect-link {
-    text-align: unset;
+  .main-content-footer .redirect-link {
+    text-align: initial;
   }
 }
 
@@ -326,10 +323,8 @@ button {
 
 .legal-links .link {
   color: rgba(0, 0, 0, 0.5);
-  font: 0.8rem/1.4 "Roboto";
+  font-size: 0.8rem;
 }
-
-/* Adds margin right for the first link in content legal */
 
 @media (min-width: 576px) {
   .legal-links .link:nth-child(1) {
@@ -337,10 +332,8 @@ button {
   }
 }
 
-/* There is company text class in hero content footer */
-
-.main-content .footer-content .company-text {
-  font: 0.8rem/1.4 "Roboto";
+.main-content .main-content-footer .company-text {
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5);
 }
 
