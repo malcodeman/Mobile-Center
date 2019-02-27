@@ -7,9 +7,9 @@ Template for register/login page.
 
 Completely responsive and adaptive user interface.
 
-Basic form validation.
+Inspired by [Visual Studio App Center](https://appcenter.ms/create-account), thank you Microsoft 🙏.
 
-![Login page](screenshots/login.png)
+![Login page](docs/images/screenshot.jpg)
 
 ## Assets
 
